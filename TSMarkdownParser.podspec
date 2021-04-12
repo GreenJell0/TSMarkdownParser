@@ -1,25 +1,24 @@
 Pod::Spec.new do |s|
-  s.name         = "TSMarkdownParser"
-  s.version      = "2.2.0"
-  s.summary      = "A markdown to NSAttributedString parser for iOS and OSX"
-
-  s.description  = <<-DESC
+ s.name = "TSMarkdownParser"
+ s.version = "2.3.0"
+ s.summary = "A markdown to NSAttributedString parser for iOS and OSX"
+ s.description = <<-DESC
 		TSMarkdownParser is a markdown to NSAttributedString parser for iOS, TVOS and OSX implemented using NSRegularExpressions. 
 		It supports many of the standard tags layed out by John Gruber on his site [Daring Fireball](http://daringfireball.net/projects/markdown/syntax). 
 		It is also very extendable via Regular Expressions making it easy to add your own custom tags or a totally different parsing syntax if you like.
-                DESC
+ DESC
 
-  s.homepage     = "https://github.com/laptobbe/TSMarkdownParser"
-  s.license      = "MIT" 
-  s.authors      = { "Tobias Sundstrand" => "tobias.sundstrand@gmail.com", "Antoine Cœur" => "" }
-  s.social_media_url   = "https://twitter.com/laptobbe"
-  s.ios.deployment_target = "6.0"
-  s.tvos.deployment_target = "9.0"
-  s.osx.deployment_target = "10.7"
-  s.swift_version = '4.2'
-  s.source       = { :git => "https://github.com/laptobbe/TSMarkdownParser.git", :tag => s.version.to_s }
-  s.source_files  = "TSMarkdownParser/**/*.{h,m,swift}"
-  s.requires_arc = true
-  s.ios.framework = 'UIKit'
-  s.tvos.framework = 'UIKit'
+ s.homepage = "https://github.com/GreenJell0/TSMarkdownParser"
+ s.license = "MIT"
+ s.authors = { "Tobias Sundstrand" => "tobias.sundstrand@gmail.com", "Antoine Cœur" => "" }
+ s.social_media_url = "https://twitter.com/laptobbe"
+ s.ios.deployment_target = "12.0"
+ s.tvos.deployment_target = "12.0"
+ s.osx.deployment_target = "10.13"
+ s.swift_version = '5.0'
+ s.source = { :git => "https://github.com/GreenJell0/TSMarkdownParser.git", :tag => s.version.to_s }
+ s.source_files = "Sources/TSMarkdownParser/*.{h,m}", "Sources/TSMarkdownParserSwift/*.swift"
+ s.requires_arc = true
+ s.ios.framework = 'UIKit'
+ s.tvos.framework = 'UIKit'
 end
